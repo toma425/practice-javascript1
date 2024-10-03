@@ -1,18 +1,15 @@
-function changecolor(){
-document.getElementById("text").style.color = "red";
-}
-//document.querySelector("h1").style.color = "red";
+//クリックされたら動作する
 
-//document.getElementById("text").style.color = "red";
-/* これは、ドキュメントの中の「text」というIDを持っている
-　　タグのスタイルの色を赤にしてください。*/
-let count = 0;
-function increaseCount(){
-count++;
-document.getElementById("counter").innerText = count;
-}
-function herasuCount(){
+ function errorInput(){
+    console.log(document.getElementById("month").value)
+    console.log(document.getElementById("day").value)
 
-    count--;
-    document.getElementById("counter").innerText = count;
-}
+    const month = document.getElementById("month").value;
+    const day = document.getElementById("day").value;
+
+    console.log("month:",month,"day:",day)
+    
+ }
+ 
+ //document.getElementById("month")はタグを確認するだけ
+ //valueはそのタグの値を示す
