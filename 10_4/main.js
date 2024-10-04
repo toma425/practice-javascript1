@@ -9,4 +9,14 @@
     console.log("month:",month,"day:",day)
     
  }
- 
+
+ const monthSrect = document.getElementById("month");
+ monthSelectlist();
+ function monthSelectlist(){
+   for (let i=1;i<=12;i++){
+      let option = document.createElement("option");
+      option.value = i;
+      option.textContent = i + "月";
+      monthSelectlist.appendChild(option);
+   }
+ }
